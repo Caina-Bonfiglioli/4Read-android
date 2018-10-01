@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             );
         }
 
-//        if (v.getId() == R.id.btn_login_register){
-//            it = new Intent(
-//                    getApplicationContext(),
-//                    RegisterActivity.class
-//            );
-//        }
+        if (v.getId() == R.id.btn_login_register){
+            it = new Intent(
+                    getApplicationContext(),
+                    RegisterActivity.class
+            );
+        }
 
 
         startActivity(it);
