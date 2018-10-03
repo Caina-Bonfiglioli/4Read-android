@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_login){
             it = new Intent(
                     getApplicationContext(),
-                    AboutActivity.class
+                    HomeActivity.class
             );
         }
 
