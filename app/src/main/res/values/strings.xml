@@ -1,21 +1,34 @@
 <resources>
     <string name="app_name">4Read</string>
 
+    <!--Login-->
     <string name="edit_email_login">Email</string>
     <string name="edit_password_login">Password</string>
-    <string name="edit_password_register">Password</string>
-    <string name="edit_passwordConfirm_register">Corfirmar Password</string>
     <string name="btn_login">Login</string>
     <string name="btn_register">Cadastrar</string>
+
+    <!--Register-->
     <string name="edit_name_register">Nome</string>
     <string name="edit_lastName_register">Sobrenome</string>
     <string name="edit_email_register">Email</string>
+
+
+    <string name="edit_password_register">Password</string>
+    <string name="edit_passwordConfirm_register">Corfirmar Password</string>
+
+
+
+
     <string name="btn_menu_favorites">Favoritos</string>
     <string name="btn_menu_releases">Lançamentos</string>
     <string name="btn_menu_categories">Categorias</string>
     <string name="btn_menu_profile">Perfil</string>
     <string name="btn_menu_settings">Configurações</string>
     <string name="btn_menu_about">Sobre</string>
+
+    <!--Text About-->
+    <string name="txtAbout"> Aplicativo desenvolvido pra a aula de Programação pra dispositivos moveis.
+Criado por Cainã Paulosso Bonfiglioli, graduando da Fatec Ribeirão Preto</string>
 
     <string-array name="months_array">
         <item>Janeiro</item>
