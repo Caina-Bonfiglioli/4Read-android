@@ -54,8 +54,6 @@
 
     <TextView
         android:text="Mes de nascimento"
-        android:textColor="#fff"
-        android:textSize="15dp"
         android:labelFor="@+id/spn_months"
         android:layout_marginBottom="5dp"
         android:layout_width="wrap_content"
@@ -71,8 +69,6 @@
 
     <TextView
         android:text="Dia de nascimento"
-        android:textColor="#fff"
-        android:textSize="15dp"
         android:labelFor="@+id/spn_days"
         android:layout_marginBottom="5dp"
         android:layout_width="wrap_content"
@@ -86,20 +82,29 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"></Spinner>
 
+    <Button
+        android:id="@+id/btn_Terms_Register"
+        android:text="Termos de Uso"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_height="15dp" />
+
     <CheckBox
         android:id="@+id/ckb_terms"
         android:text="Li e concordo com os termos de uso"
         android:textColor="#000"
-        android:textSize="15dp"
+        android:textSize="10dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
-        android:layout_height="50dp" />
+        android:layout_height="30dp" />
 
     <Button
         android:id="@+id/btn_register_register"
         android:text="@string/btn_register"
         android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_gravity="center" />
 
 </LinearLayout>

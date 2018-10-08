@@ -44,6 +44,7 @@ public class BookAdapter extends RecyclerView.Adapter {
         vh.imgCover.setImageResource(img);
         vh.txtTitle.setText(book.getTitle());
         vh.txtAuthor.setText(book.getAuthor());
+        vh.txtCategory.setText(book.getCategory());
         vh.txtPublishingCompany.setText(
                 String.format("%s ,%d", book.getPublishingCompany(),
                         book.getYear())

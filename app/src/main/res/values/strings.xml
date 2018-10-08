@@ -17,8 +17,6 @@
     <string name="edit_passwordConfirm_register">Corfirmar Password</string>
 
 
-
-
     <string name="btn_menu_favorites">Favoritos</string>
     <string name="btn_menu_releases">Lançamentos</string>
     <string name="btn_menu_categories">Categorias</string>
@@ -26,9 +24,22 @@
     <string name="btn_menu_settings">Configurações</string>
     <string name="btn_menu_about">Sobre</string>
 
+    
+
     <!--Text About-->
     <string name="txtAbout"> Aplicativo desenvolvido pra a aula de Programação pra dispositivos moveis.
 Criado por Cainã Paulosso Bonfiglioli, graduando da Fatec Ribeirão Preto</string>
+
+    <!-- Text Terms-->
+    <string name="txtTerms">Todos os direitos estão reservados a editora e aos Autores</string>
+    
+    <!--Arrays-->
+
+    <string-array name="genre_array">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Não especificado</item>
+    </string-array>
 
     <string-array name="months_array">
         <item>Janeiro</item>
@@ -78,11 +89,13 @@ Criado por Cainã Paulosso Bonfiglioli, graduando da Fatec Ribeirão Preto</stri
         <item>30</item>
         <item>21</item>
     </string-array>
+
+
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Usuário</string>
+    <string name="nav_header_subtitle">usuario.user@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 </resources>

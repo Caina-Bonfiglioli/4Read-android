@@ -1,12 +1,9 @@
 package br.com.caina_bonfiglioli.a4read;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -78,17 +75,17 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_favorites) {
-
+            fragment = new FavoritesFragment();
         } else if (id == R.id.nav_releases) {
-
+            fragment = new ReleasesFragment();
         } else if (id == R.id.nav_categories) {
-            fragment = new CategoriesFragment();
+            fragment = new ListFragment();
         } else if (id == R.id.nav_profile) {
-
+            fragment = new ProfileFragment();
         } else if (id == R.id.nav_about) {
             fragment = new AboutFragment();
         }else if (id == R.id.nav_manage) {
-
+            fragment = new SettingsFragment();
         }
 
         if(fragment != null){

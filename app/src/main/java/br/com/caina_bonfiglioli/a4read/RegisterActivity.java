@@ -9,6 +9,7 @@ import android.widget.Button;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button btnRegister;
+    private Button btnTerms;
     private Intent it;
 
     @Override
@@ -18,6 +19,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         btnRegister = (Button)findViewById(R.id.btn_register_register);
         btnRegister.setOnClickListener(this);
+        btnTerms = (Button)findViewById(R.id.btn_Terms_Register);
+        btnTerms.setOnClickListener(this);
     }
 
     @Override
@@ -26,6 +29,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
              it = new Intent(
                     getApplicationContext(),
                     HomeActivity.class
+            );
+        }
+
+        if (v.getId() == R.id.btn_Terms_Register){
+            it = new Intent(
+                    getApplicationContext(),
+                    TermsActivity.class
             );
         }
 

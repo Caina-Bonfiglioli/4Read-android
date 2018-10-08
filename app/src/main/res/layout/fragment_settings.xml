@@ -4,9 +4,55 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:textSize="20dp"
+        android:text="Notificações"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Confugurações"
-        android:textSize="50dp"/>
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/swNotification"
+        android:text="Deseja receber notificações"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20dp"
+        android:text="Download"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:text="Somente WIFI"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20dp"
+        android:text="Termos Legais"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnTermsSettings"
+        android:text="Termos de Uso"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

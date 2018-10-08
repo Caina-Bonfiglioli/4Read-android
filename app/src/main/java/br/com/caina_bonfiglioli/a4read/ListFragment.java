@@ -10,30 +10,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class CategoriesFragment extends Fragment {
+public class ListFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       View view = inflater.inflate(R.layout.fragment_categories, null);
+       View view = inflater.inflate(R.layout.fragment_list, null);
 
-        RecyclerView rv = (RecyclerView)view.findViewById(R.id.rcvFiction);
+        RecyclerView rv = (RecyclerView)view.findViewById(R.id.rcvBooks);
 
-        rv.setAdapter(new BookAdapter(Book.listFiction(), getContext()));
+        rv.setAdapter(new BookAdapter(Book.listAll(), getContext()));
 
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(),
                 LinearLayoutManager.VERTICAL, false);
 
         rv.setLayoutManager(manager);
-
-        RecyclerView rv2 = (RecyclerView)view.findViewById(R.id.rcvRomance);
-
-        rv2.setAdapter(new BookAdapter(Book.listRomance(), getContext()));
-
-        RecyclerView.LayoutManager manager2 = new LinearLayoutManager(getContext(),
-                LinearLayoutManager.VERTICAL, false);
-
-        rv.setLayoutManager(manager2);
 
         return view;
     }
