@@ -26,6 +26,15 @@ public class CategoriesFragment extends Fragment {
 
         rv.setLayoutManager(manager);
 
+        RecyclerView rv2 = (RecyclerView)view.findViewById(R.id.rcvRomance);
+
+        rv2.setAdapter(new BookAdapter(Book.listRomance(), getContext()));
+
+        RecyclerView.LayoutManager manager2 = new LinearLayoutManager(getContext(),
+                LinearLayoutManager.VERTICAL, false);
+
+        rv.setLayoutManager(manager2);
+
         return view;
     }
 
