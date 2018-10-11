@@ -74,7 +74,9 @@ public class HomeActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_favorites) {
+        if (id == R.id.nav_home) {
+            fragment = new HomeFragment();
+        }else if (id == R.id.nav_favorites) {
             fragment = new FavoritesFragment();
         } else if (id == R.id.nav_releases) {
             fragment = new ReleasesFragment();
