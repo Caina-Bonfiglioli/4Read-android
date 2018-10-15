@@ -23,6 +23,12 @@
     <string name="btn_menu_profile">Perfil</string>
     <string name="btn_menu_settings">Configurações</string>
     <string name="btn_menu_about">Sobre</string>
+    
+    
+    <!--Settings-->
+    <string name="rdb_small_letter">Pequeno</string>
+    <string name="rdb_middle_letter">Médio</string>
+    <string name="rdb_big_letter">Grande</string>
 
     
 
