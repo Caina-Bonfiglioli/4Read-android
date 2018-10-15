@@ -27,11 +27,12 @@ public class BookViewHolder extends RecyclerView.ViewHolder implements View.OnCl
 
     @Override
     public void onClick(View v) {
-        int position = getAdapterPosition();
+        //int position = getAdapterPosition();
+        TextView txtTitle = (TextView)v.findViewById(R.id.txtTitulo);
 
         Toast.makeText(
                 itemView.getContext(),
-                "Posição selecionada" + position,
+                "Livro selecionado " + txtTitle,
                 Toast.LENGTH_SHORT
         ).show();
     }
