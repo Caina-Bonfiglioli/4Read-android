@@ -33,8 +33,8 @@
     
 
     <!--Text About-->
-    <string name="txtAbout"> Aplicativo desenvolvido pra a aula de Programação pra dispositivos moveis.
-Criado por Cainã Paulosso Bonfiglioli, graduando da Fatec Ribeirão Preto</string>
+    <string name="txtAbout"> O aplicativo 4Read é um serviço de assinatura de livros e comic books.
+        Aplicativo desenvolvido por Cainã Paulosso Bonfiglioli, graduando da Fatec Ribeirão Preto</string>
 
     <!-- Text Terms-->
     <string name="txtTerms">Todos os direitos estão reservados a editora e aos Autores</string>
