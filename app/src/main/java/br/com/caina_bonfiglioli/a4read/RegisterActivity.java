@@ -10,12 +10,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button btnRegister;
     private Button btnTerms;
     private Intent it;
+    private EditText edtNameRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         btnRegister.setOnClickListener(this);
         btnTerms = (Button)findViewById(R.id.btn_Terms_Register);
         btnTerms.setOnClickListener(this);
+        edtNameRegister = (EditText)findViewById(R.id.edit_name);
     }
 
     @Override
@@ -36,6 +39,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     "Faça um tour pela nosso aplicativo.\n" +
                             "Aqui você encontra todo tipo de literatura. \n"
             );
+
+            Bundle bundle = new Bundle();
+            bundle.putString("edtName", edtNameRegister.getText().toString());
+            HomeFragment home = new HomeFragment();
+            home.setArguments(bundle);
 
             it = new Intent(
                 getApplicationContext(),
@@ -55,15 +63,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private void criarNotificacao(String titulo, String texto){
 
-        // 01. Definir as propriedades da Notificação
         final int NOTIFICATION_ID = 123;
         final String CHANNEL_ID = "Notificação";
-
-        // 02. Instanciar o gerenciador de notificações
         NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
 
-
-        // 03. Definir um Canal de Notificação para API >= 28
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             int importance = NotificationManager.IMPORTANCE_HIGH;
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "canal", importance);
@@ -75,8 +78,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             channel.setShowBadge(true);
             notificationManager.createNotificationChannel(channel);
         }
-
-        // 04. Especificar o ícone, o título e a mensagem da notificação
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.drawable.logo)
                 .setContentTitle(titulo)
@@ -84,15 +85,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         new NotificationCompat.BigTextStyle().bigText(texto)
                 )
                 .setContentText(texto);
-
-        // 05. Definir qual Atividade será chamada quando o usuário clicar na notificação
-//        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-//        stackBuilder.addParentStack(TelaPrincipal.class);
-//        stackBuilder.addNextIntent(new Intent(this, TelaPrincipal.class));
-//        PendingIntent it = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
-//        builder.setContentIntent(it);
-
-        // 06. Exibir a notificação
         notificationManager.notify(NOTIFICATION_ID, builder.build());
     }
 }
