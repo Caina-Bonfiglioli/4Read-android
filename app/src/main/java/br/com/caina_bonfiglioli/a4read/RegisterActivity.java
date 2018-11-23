@@ -5,12 +5,14 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -39,11 +41,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     "Faça um tour pela nosso aplicativo.\n" +
                             "Aqui você encontra todo tipo de literatura. \n"
             );
-
-            Bundle bundle = new Bundle();
-            bundle.putString("edtName", edtNameRegister.getText().toString());
-            HomeFragment home = new HomeFragment();
-            home.setArguments(bundle);
 
             it = new Intent(
                 getApplicationContext(),
