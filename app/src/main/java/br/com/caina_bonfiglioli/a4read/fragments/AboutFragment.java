@@ -1,4 +1,4 @@
-package br.com.caina_bonfiglioli.a4read;
+package br.com.caina_bonfiglioli.a4read.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,13 +7,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
-public class FavoritesFragment extends Fragment {
+import br.com.caina_bonfiglioli.a4read.R;
+
+public class AboutFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_favorites, null);
+        return inflater.inflate(R.layout.fragment_about, null);
     }
 
     @Override

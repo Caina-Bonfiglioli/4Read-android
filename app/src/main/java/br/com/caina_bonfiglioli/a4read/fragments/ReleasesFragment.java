@@ -1,4 +1,4 @@
-package br.com.caina_bonfiglioli.a4read;
+package br.com.caina_bonfiglioli.a4read.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ProfileFragment extends Fragment {
+import br.com.caina_bonfiglioli.a4read.R;
+
+public class ReleasesFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_profile, null);
+        return inflater.inflate(R.layout.fragment_releases, null);
     }
 
     @Override

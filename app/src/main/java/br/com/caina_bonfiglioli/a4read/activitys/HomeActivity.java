@@ -1,6 +1,5 @@
-package br.com.caina_bonfiglioli.a4read;
+package br.com.caina_bonfiglioli.a4read.activitys;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,7 +12,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+
+import br.com.caina_bonfiglioli.a4read.R;
+import br.com.caina_bonfiglioli.a4read.fragments.AboutFragment;
+import br.com.caina_bonfiglioli.a4read.fragments.FavoritesFragment;
+import br.com.caina_bonfiglioli.a4read.fragments.HomeFragment;
+import br.com.caina_bonfiglioli.a4read.fragments.ListFragment;
+import br.com.caina_bonfiglioli.a4read.fragments.ProfileFragment;
+import br.com.caina_bonfiglioli.a4read.fragments.ReleasesFragment;
+import br.com.caina_bonfiglioli.a4read.fragments.SettingsFragment;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
